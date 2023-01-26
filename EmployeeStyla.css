@@ -141,3 +141,19 @@ label {
 .name4 {
     margin-left: -41px;
 }
+
+.select {
+    padding: 12px;
+    font-weight: bold;
+    border: 2px solid rgb(53, 44, 32);
+    border-radius: 4px;
+    resize: vertical;
+    font: normal 16px Roboto;
+    letter-spacing: 0px;
+    color: rgb(41, 16, 16);
+    background-color: transparent;
+}
+
+.name5 {
+    margin-left: 25px;
+}
