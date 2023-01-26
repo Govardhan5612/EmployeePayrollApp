@@ -157,17 +157,20 @@ label {
 .name5 {
     margin-left: 25px;
 }
+
 .name6 {
     margin-left: 55px;
 }
-.buttonParent{
+
+.buttonParent {
     display: flex;
     margin-bottom: 10px;
     justify-content: space-between;
     margin-top: 20px;
     text-align: center;
 }
-.button{
+
+.button {
     font-size: 20px;
     font-family: Roboto;
     letter-spacing: 0px;
@@ -180,50 +183,61 @@ label {
     padding: 7px 7px;
     border: 2px solid black;
     cursor: pointer;
-}
-.submitButton{
-    border: none;
-    background-color: green;
-    
+    border-radius: 20px;
 }
 
-.resetButton{
+.submitButton {
+    border: none;
+    background-color: green;
+
+}
+
+.resetButton {
     border: none;
     background-color: red;
 }
+
 @media only screen and(max-width:960px) {
-    .cancelButton{
-        margin-left:0px;
+    .cancelButton {
+        margin-left: 0px;
     }
-    .from{
+
+    .from {
         width: 85%;
-        padding:44px 20px;
+        padding: 44px 20px;
     }
 }
-@media only screen and (max-width:600px){
-    .from{
+
+@media only screen and (max-width:600px) {
+    .from {
         margin-top: 10px;
     }
-    .row{
+
+    .row {
         flex-direction: column;
     }
-    .uploadButton{
+
+    .uploadButton {
         justify-content: flex-start;
     }
-    .profile-radio-button{
+
+    .profile-radio-button {
         flex-flow: wrap;
     }
-    .submit-reset{
+
+    .submit-reset {
         width: 100%;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         margin-bottom: 20px;
     }
-    .submitButton{
+
+    .submitButton {
         margin: 0;
     }
-    .buttonParent{
+
+    .buttonParent {
         flex-direction: column-reverse;
         align-items: flex-start;
     }
