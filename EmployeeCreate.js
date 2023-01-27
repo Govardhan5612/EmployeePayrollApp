@@ -8,7 +8,7 @@ class EmployeePayrollData {
             this._name = name;
         }
         else {
-            throw "Name is Incorrect"
+            throw "Name should start with upper case"
         }
     }
     get profilePic() {
@@ -53,3 +53,26 @@ class EmployeePayrollData {
         return "name : " + this.name + ", gender : " + this.gender + ", profilePic : " + this.profilePic + ", department : " + this.department + ", salary : " + this.salary + ", startDate : " + empDate + ", note : " + this.note;
     }
 }
+window.addEventListener("DOMContentLoaded", (event) => {
+    const name = document.querySelector("#name");
+    const textError = document.querySelector(".text-error");
+    name.addEventListener("input", function () {
+        if (name.value && name.value.length == 0) {
+            textError.textContent = "";
+            return;
+        }
+        try {
+            (new EmployeePayrollData()).name = name.value;
+            textError.textContent = "";
+        }
+        catch (exception) {
+            textError.textContent = exception;
+        }
+    });
+    const salary = document.querySelector("#salary");
+    const output = document.querySelector(".salary-output");
+    output.textContent = salary.value;
+    salary.addEventListener("input", function () {
+        output.textContent = salary.value;
+    });
+});
