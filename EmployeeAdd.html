@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <script src="EmployeeCreate.js"></script>
     <header class="header">
         <div class="image">
             <img src="1.jpeg" width="100px" alt="Employee Payroll">
@@ -28,6 +29,7 @@
             <div class="row-content">
                 <label class="label text name1" for="name">Name : </label>
                 <input class="input" type="text" id="name" name="name" placeholder="Your name...." required>
+                <error-output class="text-error" for="text"></error-output>
             </div>
             <div class="row-content">
                 <label class="label text" for="profile">Profile image : </label>
@@ -78,7 +80,7 @@
                 <label class="label text name4" for="salary">Choose your salary : </label>
                 <input class="input" type="range" name="salary" id="salary" min="300000" max="1000000" step="1000"
                     value="400000">
-                <output class="salary-output text" for="salary"></output>
+                <output class="salary-output text" for="salary">4000000</output>
             </div>
             <div class="row-content">
                 <label class="label text name5" for="startDate">Start Date : </label>
@@ -141,7 +143,7 @@
             </div>
             <div class="row-content">
                 <label class="label text name6" for="notes">Notes : </label>
-                <textarea id="notes" class="input" name="Notes" placeholder="" style="height: 100px;"></textarea>
+                <textarea id="notes" class="input" name="Notes" placeholder="Enter somthing..." style="height: 100px;"></textarea>
             </div>
             <div class="buttonParent">
                 <a href="EmployeePayrollList.html" class="resetButton button cancelButton">Cancel</a>
