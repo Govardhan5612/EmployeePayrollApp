@@ -44,3 +44,37 @@
     margin-left: 430px;
 
 }
+
+.add-button {
+    cursor: pointer;
+}
+
+.main-content {
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid goldenrod;
+    margin: -8px;
+    margin-top: 9px;
+}
+
+.emp-details-text {
+    font: normal bold 24px/25px Roboto;
+    letter-spacing: 0;
+    color: darkblue;
+    opacity: 1;
+
+}
+
+.emp-count {
+    background-color: #82a70c;
+    color: aliceblue;
+    border-radius: 42%;
+    margin-left: 10px;
+    font-size: 16px;
+    width: 26px;
+    text-align: center;
+    display: inline-block;
+}
