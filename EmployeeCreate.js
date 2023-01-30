@@ -138,27 +138,6 @@ const getInputValue = (id) => {
     let value = document.getElementById(id).value;
     return value;
 }
-window.addEventListener("DOMContentLoaded", (event) => {
-    createInnerHtml();
-});
-const createInnerHtml = () => {
-    const headerHtml = " <th>Profile</th><th>Name</th><th>Gender</th><th>Department</th><th>Salary</th><th>Start Date</th><th>Actions</th>";
-    const innerHtml = `${headerHtml}
-    <tr>
-    <td><img class="profile" alt="" src="2.png" width="30px"></td>
-    <td>Govardhan</td>
-    <td>Male</td>
-    <td>
-        <div class="dept-label">HR</div>
-        <div class="dept-label">Finance</div>
-    </td>
-    <td>4000000</td>
-    <td>1 Nov 2018</td>
-    <td>
-        <img id="1" onclick="remove(this)" alt="delete" src="7.jpeg" width="30px">
-        <img id="1" onclick="update(this)" alt="delete" src="8.jpg" width="30px">
-    </td>
-</tr>
-`;
-    document.querySelector("#table-display").innerHTML;
-}
+/**
+ * Home page data store in tabular format
+ */
