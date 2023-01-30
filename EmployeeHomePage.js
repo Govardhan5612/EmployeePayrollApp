@@ -1,9 +1,9 @@
 let empPayrollList;
 window.addEventListener("DOMContentLoaded", (event) => {
-    empPayrollList=getEmployeePayrollDataFromStorage();
+    empPayrollList = getEmployeePayrollDataFromStorage();
     empPayrollList = JSON.parse(localStorage.getItem("EmployeePayrollList"));
     console.log(empPayrollList);
-   document.querySelector(".emp-count").textContent = empPayrollList.length;
+    document.querySelector(".emp-count").textContent = empPayrollList.length;
     createInnerHtml();
     localStorage.removeItem("editEmp");
 });
@@ -33,7 +33,7 @@ const createInnerHtml = () => {
 </tr>
 `;
     }
-    document.querySelector("#display").innerHTML=innerHtml;
+    document.querySelector("#display").innerHTML = innerHtml;
 }
 const getDepHtml = (deptList) => {
     let deptHtml = "";
