@@ -27,8 +27,8 @@ const createInnerHtml = () => {
     <td>${empPayrollData._salary}</td>
     <td>${empPayrollData._startDate}</td>
     <td>
-        <img name="${empPayrollData._id}" onclick="remove(this)" alt="delete" src="7.jpeg" width="30px">
-        <img name="${empPayrollData._id}" onclick="update(this)" alt="edit" src="8.jpg" width="30px">
+        <img id="${empPayrollData._id}" onclick="remove(this)" alt="delete" src="7.jpeg" width="30px">
+        <img id="${empPayrollData._id}" onclick="update(this)" alt="edit" src="8.jpg" width="30px">
     </td>
 </tr>
 `;
@@ -41,4 +41,13 @@ const getDepHtml = (deptList) => {
         deptHtml = `${deptHtml}<div class="dept-label">${dept}`
     }
     return deptHtml;
+}
+const remove = (node) => {
+    let empPayrollData = empPayrollList.find(empData => empData._id == node._id);
+    if (!empPayrollData) return;
+    const index = empPayrollList.map(empData => empData._id).indexOf(empPayrollData._id);
+    empPayrollList.splice(index, 1);
+    localStorage.setItem("EmployeePayrollList", JSON.stringify(empPayrollList));
+    document.querySelector(".emp-count").textContent = empPayrollList.length;
+    createInnerHtml();
 }
