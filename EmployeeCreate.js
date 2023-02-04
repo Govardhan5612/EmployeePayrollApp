@@ -117,7 +117,7 @@ function createAndUpdateStorage(employeePayrollData) {
     alert(employeePayrollList.toString());
     localStorage.setItem('editEmp', JSON.stringify(employeePayrollData));
     localStorage.setItem("EmployeePayrollList", JSON.stringify(employeePayrollList));
-    window.location.href = "http://127.0.0.1:5500/EmployeePayroll/EmployeePayrollList.html";
+   // window.location.href = "http://127.0.0.1:5500/EmployeePayroll/EmployeePayrollList.html";
 }
 const createEmployeePayroll = () => {
     let employeePayrollData = new EmployeePayrollData();
